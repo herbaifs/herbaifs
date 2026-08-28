@@ -1,0 +1,175 @@
+/* ========================================= */
+/* CONFIGURAÇÕES GERAIS                      */
+/* ========================================= */
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 70px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Backgrounds Compartilhados */
+#inicio,
+#linhas,
+#contato,
+#equipe,
+#projetos {
+  background-repeat: repeat;
+  background-size: 600px;
+}
+
+#inicio,
+#linhas,
+#contato {
+  background-color: #e8f5e9;
+  background-image: url("assets/bg.png");
+}
+
+#inicio {
+  padding-top: 100px !important;
+}
+
+#equipe,
+#projetos {
+  background-color: #ffcfcf;
+  background-image: url("assets/sol.png");
+}
+
+/* ========================================= */
+/* NAVBAR                                    */
+/* ========================================= */
+.navbar {
+  background-color: #198754 !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-brand img {
+  width: 40px;
+  height: auto;
+}
+.navbar-brand strong {
+  color: #ffffff !important;
+}
+
+.navbar-nav .nav-link {
+  color: #e8f5e9 !important;
+  font-weight: 500;
+  margin: 0 5px;
+  padding: 8px 16px !important;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.navbar-nav .nav-link:visited {
+  color: #c8e6c9 !important;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:visited:hover {
+  color: #ffcfcf !important;
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.active:visited {
+  color: #ffffff !important;
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Estados da Navbar */
+.navbar-topo {
+  margin: 20px auto 0 !important;
+  border-radius: 15px !important;
+  width: 95% !important;
+  max-width: 1320px !important;
+}
+.navbar-scroll {
+  margin-top: 0 !important;
+  border-radius: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* ========================================= */
+/* IMAGENS E ÍCONES                          */
+/* ========================================= */
+.member-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 5px solid #198754;
+}
+
+.img-redonda-cortada {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 10px solid #198754;
+}
+
+/* Efeito Zoom em Imagens */
+#inicio img,
+#linhas img {
+  transition: transform 0.4s ease-in-out;
+}
+#inicio img:hover,
+#linhas img:hover {
+  transform: scale(1.5);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 10;
+}
+
+/* Efeito Instagram */
+.instagram-icon {
+  font-size: 5rem;
+  color: #198754;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+.instagram-icon:hover {
+  color: #e31f1f;
+  transform: translateY(-5px) scale(1.1);
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+/* ========================================= */
+/* CARDS E FORMULÁRIOS                       */
+/* ========================================= */
+#equipe .card,
+#linhas .bg-light,
+#projetos .bg-white,
+#contato .bg-white {
+  background-color: #ffffff !important;
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  padding: 30px 25px !important;
+  height: 100% !important;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Efeito Hover Unificado para Cards */
+#equipe .card:hover,
+#linhas .bg-light:hover,
+#projetos .bg-white:hover,
+#contato .bg-white:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12) !important;
+}
